@@ -4,12 +4,10 @@
 
 .primary {
     color:var(--primary-color);
+    text-decoration: none;
 }
 
 .secondary {
     color: var(--inverted-primary-color);
-}
-
-.RED {
-    color: red;
+    text-decoration: none;
 }
