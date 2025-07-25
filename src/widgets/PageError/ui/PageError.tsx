@@ -1,7 +1,8 @@
 import { classNames } from "shared/lib/classNames/classNames";
-
+import Button from "shared/ui/Button/Button";
 import cls from './PageError.module.scss';
 import { useTranslation } from "react-i18next";
+
 
 interface PageErrorProps {
 
@@ -22,9 +23,9 @@ export const PageError = ({ className }: PageErrorProps) => {
 
         <div className={classNames(cls.PageError, {}, [className])}>
            <p>{t('Произошла непредвиденная ошибка')}</p> 
-           <button onClick={reloadPage}>
+           <Button onClick={reloadPage}>
             {t('Обновить страницу')}
-           </button>
+           </Button>
         </div>
 
     );

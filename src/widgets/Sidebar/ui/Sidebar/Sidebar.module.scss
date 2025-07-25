@@ -21,3 +21,11 @@
 .lang {
     margin-left: 20px;
 }
+
+.btn {
+    color: var(--inverted-primary-color);
+    padding: 0.3rem;
+    border: 1px solid var(--inverted-primary-color);
+    border-radius: 12px;
+    background-color: var(--inverted-bg-color);
+}
