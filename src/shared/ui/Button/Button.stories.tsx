@@ -6,6 +6,7 @@ import { Theme } from 'app/providers/ThemeProvider';
 
 
 
+
 const meta = {
   title: 'shared/Button',
   component: Button,
@@ -23,9 +24,15 @@ export const Primary: Story = {
   args: {
     children: 'Text',
   },
-  decorators: [ThemeDecorator(Theme.DARK)]
+  decorators: [ThemeDecorator(Theme.DARK)],
+  parameters: {
+    docs: {
+      description: {
+        story: 'Главная кнопка'
+      }
+    }
+  }
 };
-
 export const Outline: Story = {
   args: {
     children: 'Text',
