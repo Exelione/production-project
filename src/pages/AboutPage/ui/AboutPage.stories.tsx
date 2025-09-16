@@ -5,29 +5,25 @@ import { ThemeDecorator } from 'shared/config/storybook/ThemeDecorator/ThemeDeco
 import { Theme } from 'app/providers/ThemeProvider';
 import AboutPage from './AboutPage';
 
-
-
 const meta = {
-  title: 'pages/AboutPage',
-  component: AboutPage,
-  parameters: {
-    layout: 'auto',
-  },
-  tags: ['autodocs'],
-  args: { onClick: fn() },
+    title: 'pages/AboutPage',
+    component: AboutPage,
+    parameters: {
+        layout: 'auto',
+    },
+    tags: ['autodocs'],
+    args: { onClick: fn() },
 } satisfies Meta<typeof AboutPage>;
 
 export default meta;
 type Story = StoryObj<typeof meta>;
 
 export const Dark: Story = {
-  args: {},
-  decorators: [ThemeDecorator(Theme.DARK)]
+    args: {},
+    decorators: [ThemeDecorator(Theme.DARK)],
 };
-
 
 export const Light: Story = {
-  args: {},
-  decorators: [ThemeDecorator(Theme.NORMAL)]
+    args: {},
+    decorators: [ThemeDecorator(Theme.NORMAL)],
 };
-

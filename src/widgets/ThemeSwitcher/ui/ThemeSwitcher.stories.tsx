@@ -2,12 +2,7 @@ import type { Meta, StoryObj } from '@storybook/react-webpack5';
 import { ThemeDecorator } from 'shared/config/storybook/ThemeDecorator/ThemeDecorator';
 import { Theme } from 'app/providers/ThemeProvider';
 
-import { RouterDecorator } from 'shared/config/storybook/RouterDecorator/RouterDecorator';
 import ThemeSwitcher from './ThemeSwitcher';
-
-
-
-
 
 const meta = {
     title: 'widget/ThemeSwitcher',
@@ -25,14 +20,12 @@ export const Light: Story = {
     args: {},
     decorators: [
         ThemeDecorator(Theme.NORMAL),
-    ]
+    ],
 };
 
 export const Dark: Story = {
     args: {},
     decorators: [
         ThemeDecorator(Theme.DARK),
-    ]
+    ],
 };
-
-

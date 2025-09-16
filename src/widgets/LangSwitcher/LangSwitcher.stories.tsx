@@ -5,8 +5,6 @@ import { Theme } from 'app/providers/ThemeProvider';
 import { RouterDecorator } from 'shared/config/storybook/RouterDecorator/RouterDecorator';
 import LangSwitcher from './LangSwitcher';
 
-
-
 const meta = {
     title: 'widget/LangSwitcher',
     component: LangSwitcher,
@@ -23,16 +21,14 @@ export const Light: Story = {
     args: {},
     decorators: [
         ThemeDecorator(Theme.NORMAL),
-        RouterDecorator()
-    ]
+        RouterDecorator(),
+    ],
 };
 
 export const Dark: Story = {
     args: {},
     decorators: [
         ThemeDecorator(Theme.DARK),
-        RouterDecorator()
-    ]
+        RouterDecorator(),
+    ],
 };
-
-

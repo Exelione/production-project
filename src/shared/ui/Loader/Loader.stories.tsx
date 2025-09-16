@@ -5,9 +5,6 @@ import { Theme } from 'app/providers/ThemeProvider';
 import { RouterDecorator } from 'shared/config/storybook/RouterDecorator/RouterDecorator';
 import Loader from './Loader';
 
-
-
-
 const meta = {
     title: 'shared/Loader',
     component: Loader,
@@ -24,16 +21,14 @@ export const Light: Story = {
     args: {},
     decorators: [
         ThemeDecorator(Theme.NORMAL),
-        RouterDecorator()
-    ]
+        RouterDecorator(),
+    ],
 };
 
 export const Dark: Story = {
     args: {},
     decorators: [
         ThemeDecorator(Theme.DARK),
-        RouterDecorator()
-    ]
+        RouterDecorator(),
+    ],
 };
-
-
