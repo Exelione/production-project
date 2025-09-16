@@ -1,7 +1,6 @@
 /build
 node_modules
 .idea
-
-
+.env.local
 *storybook.log
 storybook-static
