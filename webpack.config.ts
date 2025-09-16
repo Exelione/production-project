@@ -1,5 +1,4 @@
 import webpack from 'webpack';
-import ReactRefreshWebpackPlugin from '@pmmmwh/react-refresh-webpack-plugin';
 import path from 'path';
 import { buildWebpackConfig } from './config/build/buildWebpackConfig';
 import { BuildEnv, BuildPaths } from './config/build/types/config';
@@ -13,8 +12,9 @@ export default (env: BuildEnv) => {
     };
 
     const mode = env.mode || 'development';
-    const isDev = mode === 'development';
     const PORT = env.port || 3000;
+
+    const isDev = mode === 'development';
 
     const config: webpack.Configuration = buildWebpackConfig({
         mode,
@@ -22,9 +22,5 @@ export default (env: BuildEnv) => {
         isDev,
         port: PORT,
     });
-    if (isDev) {
-        config.plugins.push(new ReactRefreshWebpackPlugin());
-        config.plugins.push(new webpack.HotModuleReplacementPlugin());
-    }
     return config;
 };
