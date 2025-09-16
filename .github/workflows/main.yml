@@ -27,3 +27,9 @@ jobs:
               run: npm run lint:scss
             - name: unit testing
               run: npm run test:unit
+            - name: Build Storybook
+              run: npm run build-storybook
+            - name: Publish to Chromatic
+              uses: chromaui/action@v1
+              with:
+                projectToken: ${{ secrets.CHROMATIC_PROJECT_TOKEN }}
