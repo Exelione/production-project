@@ -4,9 +4,6 @@ import { Theme } from 'app/providers/ThemeProvider';
 import { RouterDecorator } from 'shared/config/storybook/RouterDecorator/RouterDecorator';
 import AppLink, { AppLinkTheme } from './AppLink';
 
-
-
-
 const meta = {
     title: 'shared/AppLink',
     component: AppLink,
@@ -14,7 +11,7 @@ const meta = {
         layout: 'auto',
     },
     args: {
-        to: '/'
+        to: '/',
     },
     tags: ['autodocs'],
 
@@ -26,60 +23,60 @@ type Story = StoryObj<typeof meta>;
 export const Primary: Story = {
     args: {
         children: 'text',
-        theme: AppLinkTheme.PRIMARY
+        theme: AppLinkTheme.PRIMARY,
     },
     decorators: [
         RouterDecorator(),
-    ]
+    ],
 };
 
 export const Secondary: Story = {
     args: {
         children: 'text',
-        theme: AppLinkTheme.SECONDARY
+        theme: AppLinkTheme.SECONDARY,
     },
     decorators: [
         RouterDecorator(),
-    ]
+    ],
 };
 export const Red: Story = {
     args: {
         children: 'text',
-        theme: AppLinkTheme.RED
+        theme: AppLinkTheme.RED,
     },
     decorators: [
         RouterDecorator(),
-    ]
+    ],
 };
 
 export const PrimaryDark: Story = {
     args: {
         children: 'text',
-        theme: AppLinkTheme.PRIMARY
+        theme: AppLinkTheme.PRIMARY,
     },
     decorators: [
         RouterDecorator(),
-        ThemeDecorator(Theme.DARK)
-    ]
+        ThemeDecorator(Theme.DARK),
+    ],
 };
 
 export const SecondaryDark: Story = {
     args: {
         children: 'text',
-        theme: AppLinkTheme.SECONDARY
+        theme: AppLinkTheme.SECONDARY,
     },
     decorators: [
         RouterDecorator(),
-        ThemeDecorator(Theme.DARK)
-    ]
+        ThemeDecorator(Theme.DARK),
+    ],
 };
 export const RedDark: Story = {
     args: {
         children: 'text',
-        theme: AppLinkTheme.RED
+        theme: AppLinkTheme.RED,
     },
     decorators: [
         RouterDecorator(),
-        ThemeDecorator(Theme.DARK)
-    ]
+        ThemeDecorator(Theme.DARK),
+    ],
 };
