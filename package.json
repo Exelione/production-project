@@ -14,7 +14,7 @@
     "test:unit": "jest --config ./config/jest/jest.config.ts",
     "storybook": "storybook dev -p 6006 -c ./config/storybook",
     "build-storybook": "storybook build -c ./config/storybook",
-    "test:ui": "chromatic --project-token=${CHROMATIC_PROJECT_TOKEN:-chpt_8ba88f19b95c969}",
+    "test:ui": "chromatic --exit-on-changes --project-token=${CHROMATIC_PROJECT_TOKEN:-chpt_8ba88f19b95c969}",
     "test:ui:local": "chromatic --project-token=chpt_8ba88f19b95c969"
   },
   "keywords": [],
