@@ -1,4 +1,4 @@
-{   
+{
     "Throw error": "Throw error",
     "Главная": "Main",
     "Open": "Open",
@@ -8,5 +8,7 @@
     "Произошла непредвиденная ошибка": "An unexpected error occurred",
     "Обновить страницу": "Refresh page",
     "Переключить": "Switch",
-    "Короткий язык": "En"
+    "Короткий язык": "En",
+    "decrement": "decrement",
+    "increment": "increment"
 }
