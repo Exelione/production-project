@@ -1,4 +1,4 @@
-{   
+{
     "Throw error": "Throw error",
     "Главная": "Main",
     "Open": "Open",
@@ -9,5 +9,7 @@
     "Обновить страницу": "Refresh page",
     "Переключить": "Switch",
     "Короткий язык": "En",
+    "decrement": "decrement",
+    "increment": "increment"
     "Войти": "Login"
 }

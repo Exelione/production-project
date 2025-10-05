@@ -1,6 +1,8 @@
 {
   "Open": "Open",
   "Throw error": "Throw error",
+  "decrement": "decrement",
+  "increment": "increment",
   "open": "open",
   "toggle": "toggle",
   "Войти": "Войти",
