@@ -48,7 +48,7 @@ export const Outline: Story = {
         children: 'Text',
         theme: ButtonTheme.OUTLINE,
     },
-    decorators: [ThemeDecorator(Theme.NORMAL)],
+    decorators: [ThemeDecorator(Theme.LIGHT)],
 };
 export const OutlineSizeL: Story = {
     args: {
