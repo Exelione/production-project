@@ -19,7 +19,7 @@ type Story = StoryObj<typeof meta>;
 export const Light: Story = {
     args: {},
     decorators: [
-        ThemeDecorator(Theme.NORMAL),
+        ThemeDecorator(Theme.LIGHT),
         RouterDecorator(),
     ],
 };
